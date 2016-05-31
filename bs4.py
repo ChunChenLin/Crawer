@@ -1,4 +1,5 @@
 #from bs4 import BeautifulSoup
+import requests
 from bs4 import BeautifulSoup
 html_sample = ' \
 <html> \
@@ -11,8 +12,8 @@ html_sample = ' \
 
 soup = BeautifulSoup(html_sample)
 print soup.text
-print soup.contents
-print soup.select('html')[0] 
-print soup.select('h1')
-print soup.select('#title') #id
-print soup.select('.link') #class
+#print soup.contents
+#print soup.select('html')[0] 
+#print soup.select('h1')
+#print soup.select('#title') #id
+#print soup.select('.link') #class
